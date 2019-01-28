@@ -38,6 +38,7 @@ module.exports = {
 
       items.forEach(item => {
         item.hydrate(state);
+        state.ItemManager.add(item);
         corpse.addItem(item);
       });
       room.addItem(corpse);
